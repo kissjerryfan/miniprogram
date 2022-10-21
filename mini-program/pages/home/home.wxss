@@ -1,0 +1,117 @@
+page {
+  background-color: #688ffa;
+}
+/* ************************* header ************************* */
+.top {
+  height: 5vh;
+  color: #ffffff;
+  background-color: #688ffa;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40rpx;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4rpx 6rpx #688ffa;
+}
+.top image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+.say_hello {
+  font-size: 35rpx;
+  color:#eeeeee;
+  font-weight: 600;
+}
+.header {
+  position: sticky;
+  top: 72rpx;
+}
+.screen-swiper square-dot {
+  height: 300px;
+}
+.top_img {
+  border-radius: 30rpx;
+  width: 700rpx;
+  height: 388rpx;
+}
+/* ************************* center ************************* */
+.center {
+  width: 700rpx;
+  margin: 12rpx auto;
+  display: flex;
+  justify-content: space-around;
+  /* position: sticky; */
+  top: 512rpx;
+}
+.center_item {
+  background-color: white;
+  border-radius: 60rpx;
+  width: 210rpx;
+  height: 210rpx;
+  text-align: center;
+  color: #666666;
+  font-weight: 500;
+}
+.center_item image {
+  margin-top: 6px;
+  margin-left: 15%;
+  width: 70%;
+  height: 70%;
+  display: block;
+}
+/* ************************* main ************************* */
+.main {
+  box-sizing: border-box;
+  margin-top: 5rpx;
+  padding: 60rpx 40rpx;
+  position: sticky;
+  z-index: 9;
+  min-height: 96vh;
+  background-color: #f8f8f8;
+}
+.title {
+  margin-left: 5rpx;
+  font-size: 36rpx;
+  font-weight: 650;
+  color: #666666;
+}
+.glodWords {
+  margin-bottom: 32rpx;
+  margin-top: 10px;
+}
+.message {
+  margin-top: 20rpx;
+  border-radius: 32rpx;
+  padding: 20rpx 32rpx;
+}
+.glodWords .message {
+  background-color: #fa6899;
+}
+.message_title {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 10rpx;
+}
+.message_message {
+  color: #eeeeee;
+}
+.message_box {
+  background-image: image("/assets/home/background.svg");
+}
+.author {
+  text-align: right;
+  color: #dddddd;
+  font-size: 24rpx;
+}
+
+.punch .message {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fa5959;
+}
+.punch_img {
+  width: 170rpx;
+  height: 170rpx;
+}

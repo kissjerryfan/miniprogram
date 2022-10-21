@@ -1,0 +1,14 @@
+<!--show_article.wxml-->
+<view class="container">
+  <navBar ext-class='navBar' background='#fff' title='目录' back="{{false}}" home="{{true}}" bindhome="handlerGohomeClick"></navBar>
+  <view class="writing" bindtap="toQuestion">
+    <text class="writing-title">{{title}}</text>
+  </view>
+  <block wx:for="{{text}}" wx:for-index="index">
+    <view class="writing-content">
+      <text decode="{{true}}" id="txt" class="txt">
+        {{item}}
+      </text>
+    </view>
+  </block>
+</view>

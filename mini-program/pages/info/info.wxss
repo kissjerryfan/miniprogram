@@ -1,0 +1,64 @@
+
+.back_img {
+  position: fixed;
+  width: 40rpx;
+  height: 100rpx;
+  top: 5vh;
+  left: 4vw;
+}
+.img {
+  width: 100vw;
+  height: 43vh;
+  background: url("http://120.24.60.90:3000/public/img/person_back.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center_img {
+  width: 132rpx;
+  height: 132rpx;
+  border-radius: 50%;
+  margin-top: 90rpx;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255,0.5);
+}
+
+.user_head {
+  border: 10rpx solid rgba(255, 255, 255,0.3);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.center_info {
+  margin-top: 15rpx;
+  color: white;
+}
+
+.list {
+  background-color: white;
+  width: 95%;
+  border: 2rpx solid #eeeeee;
+  border-radius: 20rpx;
+  margin: 40rpx auto;
+  box-shadow: 0 4rpx 8rpx  #f0f3f0, 4rpx 0 8rpx  #f0f3f0, 0 -4rpx 8rpx  #f0f3f0, -4rpx 0 8rpx  #f0f3f0;
+}
+
+.item {
+  margin: 20rpx 40rpx;
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+}
+.item:last-child {
+  border-bottom: none;
+}
+
+.txt_right {
+  color: #666666;
+}

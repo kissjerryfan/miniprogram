@@ -1,0 +1,16 @@
+{
+  "name": "随心练",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "随心练",
+  "license": "ISC",
+  "dependencies": {
+    "js-base64": "^2.5.2",
+    "js-md5": "^0.7.3",
+    "miniprogram-api-promise": "^1.0.4"
+  }
+}

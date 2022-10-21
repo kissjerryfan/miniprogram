@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "打卡记录",
+  "usingComponents": {
+    "wux-calendar": "/components/wux-weapp/calendar/index"
+  }
+}

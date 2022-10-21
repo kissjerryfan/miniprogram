@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#f3f6fd",
+  "usingComponents": {
+    "play-icon": "/components/play-icon/index"
+  },
+  "navigationBarTitleText": "语音合成"
+}

@@ -1,0 +1,79 @@
+<view>
+  <!-- 顶部SayHello -->
+  <view class="top" bindtap="switchTab" data-url="/pages/profile/profile">
+    <!-- 用户已认证 -->
+    <block wx:if="{{bindInfo.bind}}">
+      <text class="say_hello">{{sayHello}}，{{bindInfo.data.name}} {{bindInfo.data.identity == 1 ? '老师' : '同学'}}</text>
+    </block>
+    <!-- 用户未认证已登录 -->
+    <block wx:elif="{{login}}">
+      <text class="say_hello">{{sayHello}}，{{userInfo.nickName}}</text>
+    </block>
+    <!-- 用户未登录 -->
+    <block wx:else>
+      <text class="say_hello">未登录</text>
+    </block>
+    <image src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view class="header">
+    <swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+      <swiper-item wx:for="{{swiperList}}" wx:key>
+        <navigator url="/pages/show_article/show_article?title={{item.title}}">
+          <image src="{{item.url}}" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+    <view class="cu-list grid col-3 no-border">
+      <view class="cu-item">
+        <navigator url="/pages/article/article">
+          <view class="cuIcon-read text-red">
+          </view>
+          <text>文章朗读</text>
+        </navigator>
+      </view>
+      <view class="cu-item">
+        <navigator url="/pages/karaoke/karaoke">
+          <view class="cuIcon-musicfill text-orange">
+          </view>
+          <text>欢乐K歌</text>
+        </navigator>
+      </view>
+      <view class="cu-item">
+        <navigator url="/pages/dubbing/dubbing">
+          <view class="cuIcon-video text-yellow">
+          </view>
+          <text>电影配音</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="main">
+    <view class="punch">
+      <view class="title">打卡了吗</view>
+      <navigator url="/pages/logs/logs" class="message">
+        <view>
+          <view class="message_title">已累计打卡 {{clock}} 天</view>
+          <view class="message_message">半山腰太拥挤了</view>
+          <view class="message_message">我想要去山顶看看</view>
+        </view>
+        <image class="punch_img" src="/assets/home/Punch.svg"></image>
+      </navigator>
+    </view>
+
+    <view class="glodWords">
+      <text class="title">小纸条</text>
+      <navigator class="message" url="/pages/sentence/sentence">
+        <view class="message_title">
+          <text>Later, respectively, wander and suffer sorrow.</text>
+        </view>
+        <view class="message_message">
+          <text>今后各自曲折，各自悲哀。</text>
+        </view>
+        <view class="author">
+          <text>《Gone with the wind》</text>
+        </view>
+      </navigator>
+    </view>
+
+  </view>
+</view>

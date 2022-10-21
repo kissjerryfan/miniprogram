@@ -1,0 +1,18 @@
+.recording {
+  position: fixed;
+  top: 80vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.qa{
+  background-color: rgb(197, 217, 255);
+  margin-top: 10px;
+  height:30px;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 200;
+  border: 8rpx solid rgb(202, 217, 245)
+}

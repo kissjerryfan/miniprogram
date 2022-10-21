@@ -1,0 +1,16 @@
+<!--answer.wxml-->
+<view class="container">
+  <view class="writing" bindtap="toQuestion">
+    <text class="writing-title">{{title}}</text>
+  </view>
+  <block wx:for="{{text}}" wx:for-index="index">
+    <view class="writing-content">
+      <text>
+        {{item}}
+      </text>
+    </view>
+    <view class="padding flex flex-direction">
+      <button data-text="{{item}}" bindtap="down" class="cu-btn bg-grey lg">朗读本段</button>
+    </view>
+  </block>
+</view>

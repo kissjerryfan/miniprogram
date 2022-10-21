@@ -1,0 +1,12 @@
+<view class="publick_btn_list">
+  <block wx:for="{{btnArr}}" wx:key="index">
+  <view class="publick_btn_item" bind:tap="{{item.type}}">
+    <image class="image" src="{{item.url}}"></image>
+    <text class="text">{{item.text}}</text>
+  </view>
+  </block>
+</view>
+
+<view class="text_box">
+  <textarea value="{{showStr}}" auto-height maxlength='-1' adjust-position show-confirm-bar bindconfirm="down" focus="{{!disable}}"  disabled="{{disable}}" />
+</view>

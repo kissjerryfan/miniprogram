@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/laboratory/laboratory",
+    "pages/article/article",
+    "pages/karaoke/karaoke",
+    "pages/dubbing/dubbing",
+    "pages/sentence/sentence",
+    "pages/logs/logs",
+    "pages/aiui/aiui",
+    "pages/profile/profile",
+    "pages/students/students",
+    "pages/task/task",
+    "pages/info/info",
+    "pages/ise/ise",
+    "pages/tts/tts",
+    "pages/lfasr/lfasr",
+    "pages/setting/setting",
+    "pages/login/login",
+    "pages/ocr/ocr",
+    "pages/ocr/content/content",
+    "pages/writing/writing",
+    "pages/show_article/show_article",
+    "pages/categories/categories"
+  ],
+  "networkTimeout": {
+    "request": 5000
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTitleText": "随心练",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#000000",
+    "backgroundColor": "#F8F8F8",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home_select.png"
+      },
+      {
+        "pagePath": "pages/laboratory/laboratory",
+        "iconPath": "assets/tabbar/bottom1.png",
+        "selectedIconPath": "assets/tabbar/bottom2.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "assets/tabbar/profile.png",
+        "selectedIconPath": "assets/tabbar/profile_select.png"
+      }
+    ]
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.4",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

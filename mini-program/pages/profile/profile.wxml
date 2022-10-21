@@ -1,0 +1,90 @@
+<wxs module="wxs" src="./profile.wxs"></wxs>
+<view>
+  <view class="top">
+   <view class="center">
+    <view class="center_top">
+     <view class="center_img">
+      <image wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" class="user_head"></image>
+      <image wx:else src="/assets/head/Schoolboy.svg" class="user_head"></image>
+     </view>
+     <view class="center_info">
+      <text wx:if="{{userInfo.nickName}}" class="center_name">{{userInfo.nickName}}</text>
+      <text wx:else class="center_name"  class="center_name">请授权登录</text>
+      <text wx:if="{{userInfo.nickName}}" class="center_phone">积分余额：∞{{integral}}</text>
+     </view>
+    </view>
+    <view wx:if="{{userInfo.nickName}}" class="center_down">
+     <view class="center_rank" bind:tap="getIntegral">
+      <image class="rank_icon" src="/assets/image/integral.png"></image>
+      <text class="rank_text">获取积分</text>
+     </view>
+     <view class="center_rank" bind:tap="certification">
+      <image class="rank_icon" src="/assets/image/Certification.png"></image>
+      <text class="rank_text">身份认证</text>
+     </view>
+    </view>
+    <view wx:else class="center_down">
+      <button plain open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" style="border:none;">授权登录</button>
+    </view>
+   </view>
+   <image src='http://120.24.60.90:3000/public/img/wave.gif' mode='scaleToFill' class='gif-wave'></image>
+  </view>
+   <view class="wave"></view>
+  <view class="cells" wx:if="{{binding}}">
+  <block wx:for="{{cells}}" wx:key="index">
+    <view class="cell" bind:touchstart="{{wxs.touchStart}}" bind:touchend="{{wxs.touchEnd}}" bindtap="{{item.type}}">
+      <view class="cell_left">
+          <image src="{{item.icon}}" mode="aspectFit" class="cell_left_img"></image>
+          <text class="cell_left_txt">{{item.title}}</text>
+      </view>
+      <text class="cell_right_txt">{{item.message}}</text>
+    </view>
+  </block>
+  </view>
+  
+  <view class="cells" wx:if="{{bindInfo.data.identity == 1}}">
+  <block wx:for="{{students}}" wx:key="index">
+    <view class="cell" bind:touchstart="{{wxs.touchStart}}" bind:touchend="{{wxs.touchEnd}}" bindtap="{{item.type}}">
+      <view class="cell_left">
+          <image src="{{item.icon}}" mode="aspectFit" class="cell_left_img"></image>
+          <text class="cell_left_txt">{{item.title}}</text>
+      </view>
+      <text class="cell_right_txt">{{item.message}}</text>
+    </view>
+  </block>
+  </view>
+
+  <view class="cells" >
+    <button class="cell button" open-type="contact" >
+      <view class="cell_left">
+          <image src="/assets/image/service.svg" mode="aspectFit" class="cell_left_img"></image>
+          <text class="cell_left_txt">联系客服</text>
+      </view>
+      <text class="cell_right_txt">联系客服</text>
+    </button>
+    <button class="cell button" open-type="feedback" >
+      <view class="cell_left">
+          <image src="/assets/image/feedback.svg" mode="aspectFit" class="cell_left_img"></image>
+          <text class="cell_left_txt">意见反馈</text>
+      </view>
+      <text class="cell_right_txt">反馈意见或建议</text>
+    </button>
+
+  <block wx:for="{{github}}" wx:key="index">
+    <view class="cell" bind:touchstart="{{wxs.touchStart}}" bind:touchend="{{wxs.touchEnd}}" bindtap="{{item.type}}">
+      <view class="cell_left">
+          <image src="{{item.icon}}" mode="aspectFit" class="cell_left_img"></image>
+          <text class="cell_left_txt">{{item.title}}</text>
+      </view>
+      <text class="cell_right_txt">{{item.message}}</text>
+    </view>
+  </block>
+  </view>
+
+
+</view>
+
+
+
+
+

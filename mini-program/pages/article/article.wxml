@@ -1,0 +1,28 @@
+<scroll-view scroll-y="true" class="container">
+
+  <block wx:for="{{articleList}}">
+    <view class="cu-card case">
+      <view class="cu-item shadow">
+        <navigator url="/pages/writing/writing?title={{item.title}}">
+          <view class="image">
+            <image src="{{item.img_src}}" mode="widthFix"></image>
+          </view>
+        </navigator>
+        <view class="cu-list menu-avatar">
+          <view class="cu-item">
+            <view class="cu-avatar round lg" style="background-image:url({{item.teacher_pic}});"></view>
+            <view class="content flex-sub">
+              <view class="text-grey">{{item.title}}</view>
+              <view class="text-gray text-sm flex justify-between">
+                {{item.teacher}}
+                <view class="text-gray text-sm">
+                  <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>

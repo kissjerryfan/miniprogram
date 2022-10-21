@@ -1,0 +1,34 @@
+/* pages/show_article/show_article.wxss *//**answer.wxss**/
+
+.container {
+  padding: 0;
+  font-size: 14rpx;
+  background: #F0F4F3;
+  color: #000;
+}
+
+.writing {
+  position: relative;
+  width: 100%;
+  padding: 40rpx 50rpx 30rpx;
+  background: #298DE5;
+  color: #fff;
+  font-size: 38rpx;
+  line-height: 48rpx;
+  text-align: center;
+}
+
+.writing-content{
+  padding: 0rpx 40rpx;
+  background: rgb(240, 244, 243);
+  text-align: justify;
+}
+.writing-content text{
+  font-size: 35rpx;
+  color: #454545;
+  line-height: 44rpx;
+}
+
+.navBar {
+  height: 20rpx;
+}

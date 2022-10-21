@@ -1,0 +1,10 @@
+page {
+  background-color: #fcf9ee;
+}
+.text_box {
+  margin: 20rpx;
+  padding: 20rpx;
+  background-color: #ffffff;
+}
+
+

@@ -1,0 +1,38 @@
+<!--categoriees.wxml-->
+<view class="container">
+  <navigator url="/pages/show_article/show_article?title={{title}}">
+    <view class="list1" bindtap="list1">
+      <text class="list1-title">{{title1}}</text>
+    </view>
+  </navigator>
+  <navigator url="/pages/show_article/show_article?title={{title}}">
+    <view class="list2" bindtap="list2">
+      <text class="list2-title">{{title2}}</text>
+    </view>
+  </navigator>
+  <navigator url="/pages/show_article/show_article?title={{title}}">
+    <view class="list3" bindtap="list3">
+      <text class="list3-title">{{title3}}</text>
+    </view>
+  </navigator>
+  <navigator url="/pages/show_article/show_article?title={{title}}">
+    <view class="list4" bindtap="list4">
+      <text class="list3-title">{{title4}}</text>
+    </view>
+  </navigator>
+  <navigator url="/pages/show_article/show_article?title={{title}}">
+    <view class="list5" bindtap="list5">
+      <text class="list4-title">{{title5}}</text>
+    </view>
+  </navigator>
+  <navigator url="/pages/show_article/show_article?title={{title}}">
+    <view class="list6" bindtap="list6">
+      <text class="list5-title">{{title6}}</text>
+    </view>
+  </navigator>
+  <navigator url="/pages/show_article/show_article?title={{title}}">
+    <view class="list7" bindtap="list7">
+      <text class="list6-title">{{title7}}</text>
+    </view>
+  </navigator>
+</view>

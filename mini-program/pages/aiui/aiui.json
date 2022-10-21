@@ -1,0 +1,8 @@
+{
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#688ffa",
+  "navigationBarTitleText": "AIUI",
+  "usingComponents": {
+    "recording": "/components/recording/recording"
+  }
+}
